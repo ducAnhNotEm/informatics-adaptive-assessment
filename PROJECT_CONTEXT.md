@@ -81,7 +81,7 @@ d:\AI_hoc_tap\
 
 ## 5. Bộ Quy Tắc Phòng Chống Ảo Giác & "Nói Bừa" (Model Assurance)
 
-Học tập trực tiếp từ tiêu chuẩn phòng vệ của `vn-travel-planner`:
+Áp dụng tiêu chuẩn phòng vệ Model Assurance Manifesto cho EdTech:
 
 1. **Semantic Generator, NOT Decision Maker:** LLM chỉ làm nhiệm vụ trích xuất ý và soạn thảo nội dung thô. Điểm số, độ đúng sai, kết quả test và cập nhật năng lực học sinh **100% do Python Core Engine xác định thực thi**.
 2. **Zero-Curriculum Hallucination:** Nghiêm cấm đưa kiến thức ngoài phạm vi SGK KNTT (Trang 5 đến 105). Mọi câu hỏi phải lưu vết số trang (`page_start`).

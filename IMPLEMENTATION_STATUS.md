@@ -67,26 +67,28 @@
 ---
 
 ## 6. Bộ Kiểm Định Thực Nghiệm 30 Câu Chuẩn (Ground Truth Benchmark)
-- [ ] Xây dựng file đối chứng chuẩn hóa `data/ground_truth_30.json` bám sát Chủ đề Python Tin học 10:
-  - 10 câu Nhận biết (Cú pháp, hàm chuẩn).
-  - 10 câu Thông hiểu (Đoán output luồng điều khiển/vòng lặp).
-  - 6 câu Vận dụng (Sửa lỗi giải thuật, hoàn thiện hàm).
-  - 4 bài Vận dụng cao (Thuật toán kèm 5 test cases chi tiết).
+- [ ] Xây dựng file đối chứng chuẩn hóa `data/ground_truth_30.json` bám sát 18 bài SGK Tin học 12 Kết Nối Tri Thức:
+  - 10 câu Nhận biết (Phần I - Trắc nghiệm 4 lựa chọn MCQ bám sát khái niệm AI, mạng, HTML).
+  - 10 câu Thông hiểu (Phần II - Trắc nghiệm Đúng/Sai 4 ý $a, b, c, d$ neo giữ case-study mạng và đoán output HTML).
+  - 6 câu Vận dụng (Tình huống thực tế Đúng/Sai hoặc điền khuyết biểu mẫu Form/CSS).
+  - 4 bài Vận dụng cao (Thực hành viết mã HTML/CSS chấm qua Structural Validator Localized Fatality).
 - [ ] Viết script tự động đánh giá hệ thống `scripts/evaluate_system.py`:
   - Đo chỉ số Code Syntax Validity Rate ($\text{CSVR} = 100\%$).
   - Đo chỉ số Bloom Level Alignment Accuracy ($\ge 80\%$).
-  - Đo chỉ số Test Suite Coverage Rate ($100\%$).
+  - Đo chỉ số Curriculum Grounding Accuracy ($100\%$ dẫn xuất đúng số trang SGK KNTT).
   - Xuất bảng kết quả và biểu đồ phục vụ báo cáo đồ án.
 
 ---
 
 ## 7. Giao Diện Người Dùng Thực Địa (Field-Grade Web App UI/UX)
 - [ ] Xây dựng Giao diện Học sinh (Student Workspace):
-  - Khung làm bài trắc nghiệm thích ứng theo từng câu hỏi.
-  - Tích hợp **Monaco Editor** (nhân VS Code) có highlight cú pháp Python, đánh số dòng và phím tắt chuẩn.
-  - Terminal hiển thị kết quả chấm test case trực quan (Xanh: Pass, Đỏ: Fail kèm Socratic Hint gợi ý tư duy).
+  - Khung làm bài trắc nghiệm thích ứng theo từng câu hỏi (Phần I MCQ & Phần II Đúng/Sai 4 ý).
+  - Tích hợp **Monaco Editor** (nhân VS Code) có highlight cú pháp HTML/CSS, đánh số dòng và phím tắt chuẩn.
+  - Cửa sổ xem trước trực quan (Client-side Sandboxed iframe) hiển thị trang web tức thời.
+  - Terminal hiển thị kết quả chấm thẻ phân rã Localized Fatality (Xanh: Pass, Đỏ: Fail kèm Socratic Hint).
 - [ ] Xây dựng Dashboard Quản lý Giáo viên (Teacher Dashboard):
-  - Biểu đồ phân bổ năng lực học sinh theo 4 mức Bloom và từng chương mục SGK.
+  - Biểu đồ phân bổ năng lực học sinh theo 4 mức Bloom và từng nút tri thức 18 bài SGK KNTT.
+  - Phân tích hồ sơ lỗi ngộ nhận (`MisconceptionRecord`) của từng học sinh.
   - Màn hình duyệt, chỉnh sửa và quản lý ngân hàng câu hỏi.
   - Nút xuất đề thi 1-chạm ra file Word (`.docx`) theo quy chuẩn Bộ GD&ĐT.
 
@@ -97,9 +99,9 @@
 ```
 Tuần 1: Khóa API Contracts & Mock Data ──────► [Tất cả 3 người]
 Tuần 2-4: Phát triển độc lập theo chuyên môn:
-   ├─ Kỹ sư 1: RAG bóc tách SGK + Prompt Engine + Validator
-   ├─ Kỹ sư 2: AST Validator + Subprocess Sandbox + Adaptive TMS
-   └─ Kỹ sư 3: Web Application + Monaco Editor + Database SQLite
+   ├─ Kỹ sư 1: RAG bóc tách 18 bài SGK + Two-stage Question Generator + Circuit Breaker
+   ├─ Kỹ sư 2: Structural HTML Validator + Adaptive TMS & Explainable Student State
+   └─ Kỹ sư 3: Web Application + Monaco Editor/iframe + Database SQLite & Docx Export
 Tuần 5: Ghép nối API Thật & Tích hợp E2E
 Tuần 6: Chạy Benchmark Ground Truth 30 câu & Đo đạc chỉ số
 Tuần 7-8: Đóng gói báo cáo, chuẩn bị Slide & Kịch bản Demo điểm 10
@@ -107,13 +109,13 @@ Tuần 7-8: Đóng gói báo cáo, chuẩn bị Slide & Kịch bản Demo điể
 
 ### Chi tiết phân công tuần:
 
-| Giai đoạn | Kỹ sư 1 (AI & RAG) | Kỹ sư 2 (Sandbox & Engine) | Kỹ sư 3 (Web & Database) |
+| Giai đoạn | Kỹ sư 1 (Data & AI Gateway) | Kỹ sư 2 (Assessment & Engine) | Kỹ sư 3 (Web UI & Database) |
 | :--- | :--- | :--- | :--- |
-| **Tuần 1** | Đồng thuận Pydantic Schema cho Question & Test cases | Đồng thuận Schema cho Code Submission & Result | Khởi tạo repo, tạo mock JSON data cho toàn bộ hệ thống |
-| **Tuần 2** | Xây dựng parser PDF bóc tách cây SGK Tin học | Xây dựng AST AST-analyzer chặn module cấm | Thiết kế CSDL SQLite: Users, Questions, Attempts, TMS |
-| **Tuần 3** | Viết Prompt sinh câu hỏi 4 mức Bloom + Code validator | Hoàn thiện Subprocess Runner có Timeout 2.0s & Memory Cap | Xây dựng UI trắc nghiệm và khung gõ code Monaco Editor |
-| **Tuần 4** | Tích hợp Dual-Engine (Gemini API + Ollama fallback) | Hoàn thiện công thức toán $TMS$ và chuyển bậc câu hỏi | Xây dựng API xác thực và Dashboard giáo viên |
-| **Tuần 5** | Ghép nối RAG API với Backend Web | Ghép nối Sandbox Runner với Backend Web | Tích hợp luồng E2E: Học sinh làm bài $\to$ Chấm $\to$ Cập nhật TMS |
+| **Tuần 1** | Đồng thuận Pydantic Schema cho Question & Taxonomy | Đồng thuận Schema cho Submission & Rubric Breakdown | Khởi tạo repo, tạo mock JSON data cho toàn bộ hệ thống |
+| **Tuần 2** | Xây dựng parser PDF bóc tách 18 bài SGK Tin 12 KNTT | Xây dựng Structural HTML Validator phân tích thẻ AST | Thiết kế CSDL SQLite: Users, Questions, Attempts, Student State |
+| **Tuần 3** | Viết Two-stage Generator sinh câu hỏi theo mã ngộ nhận | Hoàn thiện cơ chế chấm Localized Fatality & Task Cap | Xây dựng UI trắc nghiệm và khung gõ code Monaco Editor + iframe |
+| **Tuần 4** | Tích hợp Dual-Engine (Gemini API + Ollama fallback) | Hoàn thiện công thức toán $TMS$ và Intervention Ladder | Xây dựng API xác thực và Dashboard giáo viên |
+| **Tuần 5** | Ghép nối RAG API với Backend Web | Ghép nối HTML Evaluator với Backend Web | Tích hợp luồng E2E: Học sinh làm bài $\to$ Chấm $\to$ Cập nhật TMS |
 | **Tuần 6** | Soạn file `ground_truth_30.json` cùng giáo viên | Viết script `evaluate_system.py` chạy benchmark tự động | Hoàn thiện tính năng xuất đề thi ra file Word (.docx) |
-| **Tuần 7** | Chạy đánh giá đo CSVR và Bloom Alignment | Stress-test các bài code học sinh độc hại | Tối ưu UI/UX, kiểm thử đa trình duyệt |
+| **Tuần 7** | Chạy đánh giá đo CSVR và Bloom Alignment | Chạy Adversarial Assessment Set kiểm thử ca biên | Tối ưu UI/UX, kiểm thử đa trình duyệt |
 | **Tuần 8** | Chuẩn bị số liệu biểu đồ nghiên cứu | Soạn kịch bản trả lời phản biện hội đồng | Hoàn thiện tài liệu báo cáo và slide thuyết trình |
