@@ -1,0 +1,29 @@
+# --- Bí mật (AGENTS.md §0: API key chỉ ở backend, không lên Git) ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# --- Dữ liệu sinh ra khi chạy ---
+*.db
+*.sqlite3
+data/raw_pdf/
+data/cache/
+sandbox_tmp/
+
+# --- Model local (vài GB) ---
+*.gguf
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+~$*.docx

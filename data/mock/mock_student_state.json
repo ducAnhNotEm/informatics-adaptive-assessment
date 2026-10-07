@@ -1,0 +1,122 @@
+{
+  "user_id": "HS_2025_001",
+  "user_name": "Nguyễn Văn An",
+  "knowledge_nodes": {
+    "tin12_kntt_b01": {
+      "chapter_id": "tin12_kntt_b01",
+      "chapter_title": "Bài 1: Làm quen với Trí tuệ nhân tạo",
+      "tms": 0.85,
+      "attempts": 10,
+      "correct_count": 9,
+      "evidence": {
+        "attempts": 10,
+        "correct": 9,
+        "recent_correct_streak": 4
+      },
+      "cognitive_coverage": {
+        "remember": true,
+        "understand": true,
+        "apply": true,
+        "analyze": true
+      },
+      "active_misconceptions": [],
+      "misconceptions": [],
+      "intervention_stage": "NORMAL",
+      "prerequisite_met": true
+    },
+    "tin12_kntt_b03": {
+      "chapter_id": "tin12_kntt_b03",
+      "chapter_title": "Bài 3: Một số thiết bị mạng thông dụng",
+      "tms": 0.45,
+      "attempts": 8,
+      "correct_count": 3,
+      "evidence": {
+        "attempts": 8,
+        "correct": 3,
+        "recent_correct_streak": 0
+      },
+      "cognitive_coverage": {
+        "remember": true,
+        "understand": false,
+        "apply": false,
+        "analyze": false
+      },
+      "active_misconceptions": ["ERR_NET_L2_L3_DEVICE"],
+      "misconceptions": [
+        {
+          "code": "ERR_NET_L2_L3_DEVICE",
+          "count": 4,
+          "last_seen": "2026-10-07",
+          "status": "intervention_required"
+        }
+      ],
+      "intervention_stage": "MISCONCEPTION_INTERVENTION",
+      "prerequisite_met": true
+    },
+    "tin12_kntt_b07": {
+      "chapter_id": "tin12_kntt_b07",
+      "chapter_title": "Bài 7: HTML và cấu trúc trang web",
+      "tms": 0.52,
+      "attempts": 6,
+      "correct_count": 3,
+      "evidence": {
+        "attempts": 6,
+        "correct": 3,
+        "recent_correct_streak": 1
+      },
+      "cognitive_coverage": {
+        "remember": true,
+        "understand": true,
+        "apply": false,
+        "analyze": false
+      },
+      "active_misconceptions": ["ERR_HTML_TAG_NESTING"],
+      "misconceptions": [
+        {
+          "code": "ERR_HTML_TAG_NESTING",
+          "count": 2,
+          "last_seen": "2026-10-06",
+          "status": "active"
+        }
+      ],
+      "intervention_stage": "CONTRASTIVE_EXAMPLE",
+      "prerequisite_met": true
+    },
+    "tin12_kntt_b13": {
+      "chapter_id": "tin12_kntt_b13",
+      "chapter_title": "Bài 13: Khái niệm, vai trò của CSS",
+      "tms": 0.20,
+      "attempts": 2,
+      "correct_count": 0,
+      "evidence": {
+        "attempts": 2,
+        "correct": 0,
+        "recent_correct_streak": 0
+      },
+      "cognitive_coverage": {
+        "remember": false,
+        "understand": false,
+        "apply": false,
+        "analyze": false
+      },
+      "active_misconceptions": ["ERR_CSS_SYNTAX_PROPERTY"],
+      "misconceptions": [
+        {
+          "code": "ERR_CSS_SYNTAX_PROPERTY",
+          "count": 1,
+          "last_seen": "2026-10-07",
+          "status": "active"
+        }
+      ],
+      "intervention_stage": "CORRECTIVE_FEEDBACK",
+      "prerequisite_met": false
+    }
+  },
+  "misconception_frequencies": {
+    "ERR_NET_L2_L3_DEVICE": 4,
+    "ERR_HTML_TAG_NESTING": 2,
+    "ERR_CSS_SYNTAX_PROPERTY": 1
+  },
+  "recommended_chapter_id": "tin12_kntt_b03",
+  "prerequisite_warning": "Cần củng cố Bài 7 (HTML cấu trúc cơ bản) trước khi luyện tập chuyên sâu Bài 13 (CSS)."
+}

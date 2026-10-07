@@ -1,0 +1,117 @@
+[
+  {
+    "id": "kntt12-q-001",
+    "chapter_id": "tin12_kntt_b01",
+    "bloom_level": "Nhận biết",
+    "question_type": "mcq",
+    "question_text": "Đặc trưng nào sau đây là một trong các khả năng cốt lõi của Trí tuệ nhân tạo (AI)?",
+    "code_snippet": null,
+    "options": [
+      "Khả năng học từ dữ liệu và tự cải thiện hành vi",
+      "Khả năng lưu trữ dữ liệu vĩnh viễn không cần nguồn điện",
+      "Tự động tăng tốc độ xung nhịp của CPU phần cứng",
+      "Thay thế hoàn toàn 100% cảm xúc sinh học của con người"
+    ],
+    "correct_answer": "A",
+    "case_study_context": null,
+    "misconception_map": {
+      "B": "ERR_AI_WEAK_VS_STRONG",
+      "D": "ERR_AI_ETHICS_BIAS"
+    },
+    "tf_items": null,
+    "language": null,
+    "test_cases": null,
+    "expected_elements": null,
+    "explanation": "Theo SGK Tin học 12 Kết nối tri thức (Chủ đề: Máy tính và xã hội tri thức, Bài 1), khả năng học (Learning) từ dữ liệu và tri thức để rút ra quy luật là đặc trưng nền tảng của hệ thống AI."
+  },
+  {
+    "id": "kntt12-q-002",
+    "chapter_id": "tin12_kntt_b03",
+    "bloom_level": "Thông hiểu",
+    "question_type": "true_false",
+    "case_study_context": "Trong một văn phòng trường học, kỹ thuật viên dự định kết nối 10 máy tính để bàn và 2 máy in vào mạng nội bộ (LAN).",
+    "question_text": "Dựa vào tình huống mạng nội bộ văn phòng, xét tính Đúng/Sai của các mệnh đề sau:",
+    "code_snippet": null,
+    "options": null,
+    "correct_answer": null,
+    "misconception_map": null,
+    "tf_items": [
+      {
+        "label": "a",
+        "statement": "Switch (Bộ chuyển mạch) có thể được sử dụng để kết nối trực tiếp các máy tính và máy in trong cùng mạng LAN.",
+        "is_correct": true,
+        "cognitive_level": "Nhận biết",
+        "misconception_code": null,
+        "explanation": "Đúng. Switch là thiết bị trung tâm kết nối các thiết bị đầu cuối trong cùng một mạng cục bộ (LAN)."
+      },
+      {
+        "label": "b",
+        "statement": "Router (Bộ định tuyến) chỉ có chức năng khuếch đại tín hiệu vật lý, không thể định tuyến các gói tin IP giữa các mạng khác nhau.",
+        "is_correct": false,
+        "cognitive_level": "Thông hiểu",
+        "misconception_code": "ERR_NET_L2_L3_DEVICE",
+        "explanation": "Sai. Thiết bị chỉ khuếch đại tín hiệu là Repeater. Router có chức năng tìm đường và định tuyến gói tin giữa các mạng khác nhau."
+      },
+      {
+        "label": "c",
+        "statement": "Mỗi thiết bị trong mạng LAN cần được gán một địa chỉ IP duy nhất trong cùng dải mạng để có thể truyền thông điệp.",
+        "is_correct": true,
+        "cognitive_level": "Vận dụng",
+        "misconception_code": null,
+        "explanation": "Đúng. Địa chỉ IP là định danh định tuyến của thiết bị trong mạng TCP/IP."
+      },
+      {
+        "label": "d",
+        "statement": "Giao thức TCP đảm bảo việc truyền dữ liệu tin cậy, có cơ chế xác nhận gói tin và truyền lại nếu xảy ra mất mát dữ liệu.",
+        "is_correct": true,
+        "cognitive_level": "Vận dụng cao",
+        "misconception_code": null,
+        "explanation": "Đúng. TCP (Transmission Control Protocol) là giao thức hướng kết nối và đảm bảo độ tin cậy so với UDP."
+      }
+    ],
+    "language": null,
+    "test_cases": null,
+    "expected_elements": null,
+    "explanation": "Theo SGK Tin học 12 Kết nối tri thức (Bài 3: Một số thiết bị mạng thông dụng & Bài 4: Giao thức mạng), Router định tuyến gói tin còn TCP đảm bảo tin cậy."
+  },
+  {
+    "id": "kntt12-q-003",
+    "chapter_id": "tin12_kntt_b10",
+    "bloom_level": "Vận dụng",
+    "question_type": "mcq",
+    "question_text": "Cho đoạn mã HTML sau. Khi hiển thị trên trình duyệt web, người dùng bấm vào dòng chữ 'Trang chủ' thì trình duyệt sẽ làm gì?",
+    "code_snippet": "<a href=\"https://moet.gov.vn\" target=\"_blank\">Trang chủ</a>",
+    "options": [
+      "Mở liên kết https://moet.gov.vn trong một thẻ (tab) mới",
+      "Mở liên kết https://moet.gov.vn ngay trên thẻ hiện tại",
+      "Tự động tải tệp moet.gov.vn về máy tính",
+      "Đoạn mã bị lỗi cú pháp vì thuộc tính target không hợp lệ"
+    ],
+    "correct_answer": "A",
+    "tf_items": null,
+    "language": null,
+    "test_cases": null,
+    "expected_elements": null,
+    "explanation": "Theo SGK Tin học 12 Kết nối tri thức (Bài 10: Tạo liên kết), thuộc tính target='_blank' trong thẻ <a> yêu cầu trình duyệt mở siêu liên kết trong cửa sổ hoặc tab mới."
+  },
+  {
+    "id": "kntt12-q-004",
+    "chapter_id": "tin12_kntt_b09",
+    "bloom_level": "Vận dụng cao",
+    "question_type": "code",
+    "question_text": "Em hãy viết một đoạn mã HTML hoàn chỉnh để tạo một bảng (table) hiển thị Thời khóa biểu gồm 2 hàng và 2 cột. Hàng đầu tiên chứa tiêu đề 'Thứ' và 'Môn học' sử dụng thẻ tiêu đề bảng.",
+    "code_snippet": null,
+    "options": null,
+    "correct_answer": null,
+    "tf_items": null,
+    "language": "html",
+    "test_cases": null,
+    "expected_elements": [
+      "table",
+      "tr",
+      "th",
+      "td"
+    ],
+    "explanation": "Theo SGK Tin học 12 Kết nối tri thức (Bài 9: Tạo danh sách, bảng), bảng HTML sử dụng thẻ <table>, các dòng dùng <tr>, tiêu đề dùng <th> và ô dữ liệu dùng <td>."
+  }
+]

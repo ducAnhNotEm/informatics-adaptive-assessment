@@ -1,0 +1,57 @@
+[
+  {
+    "chapter_id": "tin12_kntt_b01",
+    "subject": "Tin học",
+    "grade": 12,
+    "book_series": "Kết Nối Tri Thức",
+    "theme": "Chủ đề 1. Máy tính và xã hội tri thức",
+    "chapter": "Bài 1: Làm quen với Trí tuệ nhân tạo",
+    "topic_type": "theory",
+    "sections": [
+      {
+        "section_id": "b01.1",
+        "heading": "1. Khái niệm và lịch sử phát triển của AI",
+        "concepts": [
+          "Trí tuệ nhân tạo",
+          "AI hẹp (Narrow AI)",
+          "AI tổng quát (AGI)",
+          "Khả năng học"
+        ],
+        "syntax_samples": [],
+        "raw_text": "Trí tuệ nhân tạo (Artificial Intelligence - AI) là ngành khoa học máy tính nghiên cứu cách làm cho máy tính có được những năng lực trí tuệ của con người như học tập, suy luận, nhận thức và giải quyết vấn đề...",
+        "page_start": 5
+      }
+    ]
+  },
+  {
+    "chapter_id": "tin12_kntt_b07",
+    "subject": "Tin học",
+    "grade": 12,
+    "book_series": "Kết Nối Tri Thức",
+    "theme": "Chủ đề 4. Giải quyết vấn đề với sự trợ giúp của máy tính",
+    "chapter": "Bài 7: HTML và cấu trúc trang web",
+    "topic_type": "html_css",
+    "sections": [
+      {
+        "section_id": "b07.1",
+        "heading": "1. Cấu trúc cơ bản của tài liệu HTML",
+        "concepts": [
+          "HTML",
+          "thẻ đóng mở",
+          "phần tử",
+          "thuộc tính",
+          "doctype"
+        ],
+        "syntax_samples": [
+          "<!DOCTYPE html>",
+          "<html>",
+          "<head>",
+          "<body>",
+          "<a href='...'>"
+        ],
+        "raw_text": "Tài liệu HTML được cấu tạo bởi các phần tử được đánh dấu bằng các thẻ (tags). Mỗi tài liệu chuẩn bắt đầu bằng <!DOCTYPE html>...",
+        "page_start": 39
+      }
+    ]
+  }
+]

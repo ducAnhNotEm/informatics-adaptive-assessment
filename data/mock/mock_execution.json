@@ -1,0 +1,92 @@
+[
+  {
+    "scenario": "Bài HTML thỏa mãn toàn bộ cấu trúc thẻ yêu cầu",
+    "result": {
+      "status": "PASSED",
+      "passed_tests": 4,
+      "total_tests": 4,
+      "runtime_ms": 12.5,
+      "error_message": null,
+      "socratic_hint": null,
+      "test_results": [
+        {
+          "index": 0,
+          "is_hidden": false,
+          "passed": true,
+          "input_data": "Thẻ <table>",
+          "expected_output": "Có mặt",
+          "actual_output": "Có mặt"
+        },
+        {
+          "index": 1,
+          "is_hidden": false,
+          "passed": true,
+          "input_data": "Thẻ <tr>",
+          "expected_output": "Có mặt (ít nhất 2 thẻ)",
+          "actual_output": "Có mặt (2 thẻ)"
+        },
+        {
+          "index": 2,
+          "is_hidden": false,
+          "passed": true,
+          "input_data": "Thẻ <th>",
+          "expected_output": "Có mặt (ít nhất 2 thẻ)",
+          "actual_output": "Có mặt (2 thẻ)"
+        },
+        {
+          "index": 3,
+          "is_hidden": false,
+          "passed": true,
+          "input_data": "Thẻ <td>",
+          "expected_output": "Có mặt (ít nhất 2 thẻ)",
+          "actual_output": "Có mặt (2 thẻ)"
+        }
+      ]
+    }
+  },
+  {
+    "scenario": "Bài HTML thiếu thẻ tiêu đề <th>",
+    "result": {
+      "status": "FAILED",
+      "passed_tests": 3,
+      "total_tests": 4,
+      "runtime_ms": 11.2,
+      "error_message": "Chưa tìm thấy thẻ tiêu đề <th> trong bảng của em.",
+      "socratic_hint": "Để phân biệt dòng tiêu đề cột với các dòng dữ liệu thông thường trong bảng, chuẩn HTML sử dụng thẻ nào thay cho <td>?",
+      "test_results": [
+        {
+          "index": 0,
+          "is_hidden": false,
+          "passed": true,
+          "input_data": "Thẻ <table>",
+          "expected_output": "Có mặt",
+          "actual_output": "Có mặt"
+        },
+        {
+          "index": 1,
+          "is_hidden": false,
+          "passed": true,
+          "input_data": "Thẻ <tr>",
+          "expected_output": "Có mặt (ít nhất 2 thẻ)",
+          "actual_output": "Có mặt (2 thẻ)"
+        },
+        {
+          "index": 2,
+          "is_hidden": false,
+          "passed": false,
+          "input_data": "Thẻ <th>",
+          "expected_output": "Có mặt",
+          "actual_output": "Không tìm thấy"
+        },
+        {
+          "index": 3,
+          "is_hidden": false,
+          "passed": true,
+          "input_data": "Thẻ <td>",
+          "expected_output": "Có mặt",
+          "actual_output": "Có mặt"
+        }
+      ]
+    }
+  }
+]

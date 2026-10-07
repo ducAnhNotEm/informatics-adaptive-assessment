@@ -1,0 +1,20 @@
+[
+  {
+    "user_id": "hs-12a1",
+    "chapter_id": "tin12_kntt_b01",
+    "tms": 0.45,
+    "attempts": 2
+  },
+  {
+    "user_id": "hs-12a2",
+    "chapter_id": "tin12_kntt_b03",
+    "tms": 0.72,
+    "attempts": 4
+  },
+  {
+    "user_id": "hs-12a3",
+    "chapter_id": "tin12_kntt_b07",
+    "tms": 0.9,
+    "attempts": 6
+  }
+]

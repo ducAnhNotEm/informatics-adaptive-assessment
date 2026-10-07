@@ -1,0 +1,18 @@
+# Chỉ những gì thực sự cần (AGENTS.md §0 — Ponytail ladder).
+# Gọi Ollama/Gemini bằng urllib (stdlib) -> KHÔNG cần httpx/requests/SDK.
+# CSDL dùng sqlite3 (stdlib) -> KHÔNG cần SQLAlchemy.
+
+# Web & Contracts
+fastapi==0.141.1
+uvicorn==0.53.0
+pydantic==2.13.5
+python-dotenv==1.2.3
+
+# Bóc tách SGK PDF theo cỡ font/heading (AGENTS.md §3)
+pymupdf>=1.24,<2
+
+# Xuất đề thi Word chuẩn Bộ GD&ĐT (AGENTS.md §10)
+python-docx==1.2.0
+
+# Kiểm thử
+pytest==9.1.1
